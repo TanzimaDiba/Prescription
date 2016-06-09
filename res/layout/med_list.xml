@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+>
+
+    <TextView
+        android:id="@+id/textMed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textMed3"
+        android:layout_alignLeft="@+id/textMed1"
+        android:layout_alignRight="@+id/textMed1"
+        android:layout_marginBottom="27dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicine 2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textMed2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicine 1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMed4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMed3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textMed3"
+        android:layout_marginBottom="198dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicine 4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textMed4"
+        android:layout_alignLeft="@+id/textMed2"
+        android:layout_alignRight="@+id/textMed2"
+        android:layout_marginBottom="22dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicine 3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMed5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMed4"
+        android:layout_alignRight="@+id/textMed4"
+        android:layout_alignTop="@+id/textMed4"
+        android:layout_marginTop="51dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicine 5"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textMed1"
+        android:layout_alignLeft="@+id/textMed1"
+        android:layout_alignRight="@+id/textMed1"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:text="List Of Medicines"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

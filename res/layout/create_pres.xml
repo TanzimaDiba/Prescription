@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editSick"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:gravity="right"
+        android:text="Sickness :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editSick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editDoc"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="Doctor's Name :"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAdrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDoc"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editAdrs"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Clinic Address :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="right" />
+
+    <EditText
+        android:id="@+id/editClinicNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAdrs"
+        android:layout_below="@+id/editAdrs"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignTop="@+id/editClinicNo"
+        android:text="Clinic Contact Phone No :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/editClinicNo"
+        android:text="Doctor's Personal No :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editDocNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/editClinicNo"
+        android:layout_alignRight="@+id/editClinicNo"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textLastMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:text="Last Meeting :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/showLastMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textLastMeeting"
+        android:layout_alignBottom="@+id/textLastMeeting"
+        android:layout_alignLeft="@+id/editDocNo"
+        android:layout_alignRight="@+id/editDocNo"
+        android:gravity="center"
+        android:text="Not Fixed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textNextMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textLastMeeting"
+        android:layout_below="@+id/textLastMeeting"
+        android:layout_toLeftOf="@+id/showLastMeeting"
+        android:gravity="right"
+        android:text="Next Meeting :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/showNextMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textNextMeeting"
+        android:layout_alignBottom="@+id/textNextMeeting"
+        android:layout_alignRight="@+id/showLastMeeting"
+        android:layout_toRightOf="@+id/textNextMeeting"
+        android:gravity="center"
+        android:text="Not Fixed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textNextMeeting"
+        android:layout_alignRight="@+id/showNextMeeting"
+        android:layout_below="@+id/textNextMeeting"
+        android:layout_marginTop="26dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Medicines"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

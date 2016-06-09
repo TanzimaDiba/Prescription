@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.med"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.med.LoginPage"
+            android:label="Schedule" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.med.CreateProfile"
+            android:label="CREATE USER PROFILE" >
+            <intent-filter>
+                <action android:name="com.example.med.CREATEPROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.med.Profile"
+            android:label="USER PROFILE" >
+            <intent-filter>
+                <action android:name="com.example.med.PROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity
+            android:name="com.example.med.DeleteProfile"
+            android:label="DELETE PROFILE" >
+            <intent-filter>
+                <action android:name="com.example.med.DELETEPROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.med.CreatePrescription"
+            android:label="ADD PRESCRIPTION" >
+            <intent-filter>
+                <action android:name="com.example.med.CREATEPRESCRIPTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.MedicineList"
+            android:label="MEDICINE LIST" >
+            <intent-filter>
+                <action android:name="com.example.med.MEDICINELIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.ViewMedicineList"
+            android:label="MEDICINE LIST" >
+            <intent-filter>
+                <action android:name="com.example.med.VIEWMEDICINELIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.ViewMedicine"
+            android:label="MEDICINE INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.VIEWMEDICINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.EditMedicine"
+            android:label="MEDICINE INFO EDIT" >
+            <intent-filter>
+                <action android:name="com.example.med.EDITMEDICINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.AlarmReciever"
+            android:label="Alarm" >
+            <intent-filter>
+                <action android:name="com.example.med.ALARMRECIEVER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.Play"
+            android:label="MEDICINE INFO EDIT" >
+            <intent-filter>
+                <action android:name="com.example.med.PLAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.med.SicknessList"
+            android:label="SICKNESS LIST" >
+            <intent-filter>
+                <action android:name="com.example.med.SICKNESSLIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.CreateMedicine"
+            android:label="ADD MEDICINE INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.CREATEMEDICINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.Information"
+            android:label="INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.INFORMATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.PrescriptionInfo"
+            android:label="PRES INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.PRESCRIPTIONINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.MedicineInfo"
+            android:label="MED INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.MEDICINEINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.SickRowIdInfo"
+            android:label="MED INFO" >
+            <intent-filter>
+                <action android:name="com.example.med.SICKROWIDINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.med.ViewSicknessList"
+            android:label="SICKNESS LIST" >
+            <intent-filter>
+                <action android:name="com.example.med.VIEWSICKNESSLIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.example.med.ViewPrescription"
+            android:label="PRESCRIPTION VIEW" >
+            <intent-filter>
+                <action android:name="com.example.med.VIEWPRESCRIPTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.med.EditPrescription"
+            android:label="PRESCRIPTION EDIT" >
+            <intent-filter>
+                <action android:name="com.example.med.EDITPRESCRIPTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
